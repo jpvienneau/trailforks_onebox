@@ -1,7 +1,7 @@
 Trailforks Onebox
 =============
 
-Trailforks Onebox for embedding Trailforks Areas
+Trailforks Onebox for rendering Trailforks URI into a discourse onebox.
 
 Install in Discourse 1.0
 
