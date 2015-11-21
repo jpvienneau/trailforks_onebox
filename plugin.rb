@@ -1,7 +1,7 @@
 
 # name: trailforks_onebox
 # about: Trailforks Onebox for rendering Riding Areas in a onebox
-# version: 0.1
+# version: 0.2
 # authors: Jeff Vienneau
 
 Onebox = Onebox
@@ -10,8 +10,9 @@ module Onebox
   module Engine
     class TrailforksWidgetOnebox
       include Engine
-      #http://www.trailforks.com/region/victoria-park-5866/
-      REGEX = /^https?:\/\/www\.trailforks\.com\/widgets\/region_map\/.?/
+      # http://www.trailforks.com/widgets/region_map/?rid=1&w=800px&h=400px
+      # &maptype=terrain&trailstyle=difficulty&controls=1&list=0&layers=labels,poi,directory,region&z=&lat=&lon=
+      REGEX = /^https?:\/\/www\.trailforks\.com\/widgets\/region_map\/?\?.+/
       matches_regexp REGEX
 
       def to_html
