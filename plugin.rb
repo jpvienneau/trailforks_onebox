@@ -15,7 +15,7 @@ module Onebox
       matches_regexp REGEX
 
       def to_html
-          "<iframe height='405' width='800' frameborder='0' allowtransparency='true' scrolling='no' src='#{@url}'></iframe>"
+          "<iframe height='400' width='800' frameborder='0' allowtransparency='true' scrolling='no' src='#{@url}'></iframe>"
       end
     end
   end
