@@ -1,5 +1,7 @@
-Trailforks Onebox - !WARNING NOT READY FOR USE!.
+Trailforks Onebox
 =============
+
+*!WARNING NOT READY FOR USE!*
 
 Trailforks Onebox for rendering Trailforks URI into a discourse onebox.
 
