@@ -8,19 +8,14 @@ Onebox = Onebox
 
 module Onebox
   module Engine
-    class TrailforksRegionOnebox
+    class TrailforksWidgetOnebox
       include Engine
       #http://www.trailforks.com/region/victoria-park-5866/
-      REGEX = /^https?:\/\/www\.trailforks\.com\/region\/([0-9A-Za-z-]*)/
+      REGEX = /^https?:\/\/www\.trailforks\.com\/widgets\/region_map\/.?/
       matches_regexp REGEX
 
       def to_html
-        base_uri = "http://www.trailforks.com/widgets/region_map/?"
-        rid = 1
-        p = "rid=#{rid}&w=800px&h=400px&maptype=terrain&trailstyle=difficulty&controls=1&list=0&layers=labels,poi,directory,region&z=&lat=&lon="
-      #http://www.trailforks.com/widgets/region_map/?rid=1&w=800px&h=400px&maptype=terrain&trailstyle=difficulty&controls=1&list=0&layers=labels,poi,directory,region&z=&lat=&lon=
-        url = base_uri + p
-        "<iframe height='405' width='800' frameborder='0' allowtransparency='true' scrolling='no' src='#{@url}'></iframe>"
+          "<iframe height='405' width='800' frameborder='0' allowtransparency='true' scrolling='no' src='#{@url}'></iframe>"
       end
     end
   end
